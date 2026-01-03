@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply bg-obsidian-bg text-obsidian-text font-sans antialiased;
+  }
+}
+
+/* Custom Scrollbar for Obsidian Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-obsidian-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-obsidian-border rounded-full hover:bg-obsidian-muted;
+}
